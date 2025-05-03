@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Logo -->
+      <div class="logo">
+        <img src="Dzine logo (2).png" alt="Dzine Logo">
+      </div>
+
+      <!-- Navigation Menu -->
+      <ul class="menu" id="menu">
+        <li><a href="index.html"><b>Home</b></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle"><b>Gallery</b></a>
+          <ul class="dropdown-menu">
+            <li><a href="product.html">Product</a></li>
+            <li><a href="Ilustration.html">Illustrations</a></li>
+            <li><a href="manipulation.html">Manipulation</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html"><b>About</b></a></li>
+        <li><a href="contact.html"><b>Contact</b></a></li>
+      </ul>
+
+      <!-- Follow Button -->
+      <button class="hire-btn">
+        <a href="https://www.instagram.com/sohel_dzine?igsh=NzhpN2ZuMHFsNnhr"><b>Follow</b></a>
+      </button>
+    </nav>
+  </header>
+
+  <div class="about-content">
+    <h1>My name is Sohel Khan</h1>
+    <p>
+      I’m a 21-year-old digital artist and graphic designer from India. On my website, I share my Photoshop edits and Illustrator art, and I love involving my audience with fresh and fun ideas.
+    </p>
+    <br>
+    <br><br>
+    <h1>As a Teacher</h1>
+    <p>
+     "I'm a Graphic design teacher, passionate about sharing my knowledge and helping other unlock their creative potential. I teach design principles,software skills and encourage student to explore their own artistic style"
+    </p>
+
+  </div>
+
+
+  <footer class="footer">
+    <p>&copy; 202 Dzine Studio | All Rights Reserved</p>
+  </footer>
+ <!-- Hamburger Menu Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.getElementById("hamburger");
+      const menu = document.getElementById("menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("toggle");
+        menu.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+
+</html>

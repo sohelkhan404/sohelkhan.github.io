@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  color: white;
+  background: url("web.jpg");
+  background-repeat: repeat;
+  background-size: 5%;
+
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+.hero {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;     /* Vertical centering */
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-container .logo-image {
+  width: 425px;  /* or any size you want */
+  height: auto;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #1f1f1f;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger Toggle Animation */
+.hamburger.toggle span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.toggle span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 16px;
+}
+
+.menu a:hover {
+  color: #cc0000;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu a {
+  color: #1f1f1f;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f8f8f8;
+  color: #cc0000;
+}
+
+/* Follow Button */
+.hire-btn {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.hire-btn:hover {
+  background: #cc0000;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 800px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px 0;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .hire-btn {
+    display: flex;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+}

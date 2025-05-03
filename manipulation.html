@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Grid</title>
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Logo -->
+      <div class="logo">
+        <img src="Dzine logo (2).png" alt="Dzine Logo">
+      </div>
+
+      <!-- Navigation Menu -->
+      <ul class="menu" id="menu">
+        <li><a href="index.html"><b>Home</b></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle"><b>Gallery</b></a>
+          <ul class="dropdown-menu">
+            <li><a href="product.html">Product</a></li>
+            <li><a href="Ilustration.html">Illustrations</a></li>
+            <li><a href="manipulation.html">Manipulation</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html"><b>About</b></a></li>
+        <li><a href="contact.html"><b>Contact</b></a></li>
+       
+      </ul>
+    <button class="hire-btn" id="menu">
+            <a href="https://www.instagram.com/sohel_dzine?igsh=NzhpN2ZuMHFsNnhr"><b>Follow</b></a>
+          </button>
+        
+      <!-- Follow Button -->
+      
+    </nav>
+  </header>
+
+  <main>
+    
+
+    <section id="gallery" class="image-grid">
+      <a href="Alien.jpg"> <img src="Alien.jpg" alt="Image"></a>
+      <a href="HOMETOWN.jpg"><img src="HOMETOWN.jpg" alt="Image"></a>
+      <a href="island.jpg"><img src="island.jpg" alt="Image"></a>
+      <a href="Manipulation rocket.jpg"><img src="Manipulation rocket.jpg" alt="Image"></a>
+      <a href="planet.jpg"><img src="planet.jpg" alt="Image"></a>
+      <a href="Snake in Space.jpg"><img src="Snake in Space.jpg" alt="Image"></a>
+      <a href="westren.jpg"><img src="westren.jpg" alt="Image"></a>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.getElementById("hamburger");
+      const menu = document.getElementById("menu");
+  
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("toggle");
+        menu.classList.toggle("active"); // ✅ Matches the CSS
+      });
+    });
+  </script>
+  
+  
+  
+</body>
+</html>
